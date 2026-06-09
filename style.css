@@ -129,7 +129,24 @@ section > p {
     transform: translateY(-3px);
     background: #2457c5;
 }
+.home-buttons {
+    margin-bottom: 30px;
+}
 
+.hero-image {
+    width: 100%;
+    max-width: 1200px;
+    margin: 25px auto 0;
+    padding: 0 10px;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 28px;
+    box-shadow: 0 12px 28px rgba(36, 87, 197, 0.18);
+}
 /* CARD SECTIONS */
 
 #levels,
@@ -331,6 +348,13 @@ footer {
         max-width: 360px;
         margin: 12px auto;
         display: block;
+    }
+       .hero-image {
+        padding: 0;
+    }
+
+    .hero-image img {
+        border-radius: 18px;
     }
 }
 ```
