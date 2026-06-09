@@ -556,3 +556,20 @@ footer {
         text-align: center;
     }
 }
+.lesson-button {
+    display: inline-block;
+    text-decoration: none;
+    background: #ff6f61;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.lesson-button:hover {
+    background: #2457c5;
+    transform: translateY(-2px);
+}
