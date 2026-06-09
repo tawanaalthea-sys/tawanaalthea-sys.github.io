@@ -1,0 +1,303 @@
+```css
+/* ===============================
+   EDU-WEB SERVICES WEBSITE DESIGN
+   =============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf0;
+    color: #24324a;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #2457c5, #27b9c2);
+    color: white;
+    text-align: center;
+    padding: 35px 20px 20px;
+}
+
+header h1 {
+    font-size: 2.7rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff4a3;
+    margin-bottom: 25px;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.18);
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #ffd85a;
+    color: #24324a;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 60px 8%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2457c5;
+    margin-bottom: 25px;
+}
+
+section > p {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* HERO SECTION */
+
+#home {
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+        radial-gradient(circle at top left, #ffd85a, transparent 35%),
+        radial-gradient(circle at bottom right, #ff8a7a, transparent 35%);
+}
+
+#home h2 {
+    font-size: 3rem;
+    max-width: 850px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 760px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#home a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 8px;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    background: #ff6f61;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+#home a:hover {
+    transform: translateY(-3px);
+    background: #2457c5;
+}
+
+/* CARD SECTIONS */
+
+#levels,
+#lessons,
+#enrol {
+    background: #eef9ff;
+}
+
+#subjects,
+#resources,
+#contact {
+    background: #fffaf0;
+}
+
+#levels,
+#subjects,
+#lessons,
+#resources {
+    text-align: center;
+}
+
+#levels div,
+#subjects div,
+#lessons article,
+#resources article {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    min-height: 210px;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 22px;
+    background: white;
+    box-shadow: 0 8px 22px rgba(36, 87, 197, 0.12);
+    transition: 0.3s;
+}
+
+#levels div:hover,
+#subjects div:hover,
+#lessons article:hover,
+#resources article:hover {
+    transform: translateY(-7px);
+}
+
+#levels div:nth-of-type(1) {
+    border-top: 8px solid #ff6f61;
+}
+
+#levels div:nth-of-type(2) {
+    border-top: 8px solid #ffd85a;
+}
+
+#levels div:nth-of-type(3) {
+    border-top: 8px solid #27b9c2;
+}
+
+#levels div:nth-of-type(4) {
+    border-top: 8px solid #8c6ee8;
+}
+
+#subjects div:nth-of-type(1) {
+    border-top: 8px solid #ff8a7a;
+}
+
+#subjects div:nth-of-type(2) {
+    border-top: 8px solid #4db6e2;
+}
+
+#subjects div:nth-of-type(3) {
+    border-top: 8px solid #69c779;
+}
+
+#subjects div:nth-of-type(4) {
+    border-top: 8px solid #f3b544;
+}
+
+h3 {
+    color: #24324a;
+    margin-bottom: 12px;
+    font-size: 1.35rem;
+}
+
+/* BUTTONS */
+
+button {
+    border: none;
+    background: #2457c5;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff6f61;
+    transform: translateY(-2px);
+}
+
+/* ENROLMENT */
+
+#enrol {
+    text-align: center;
+}
+
+#enrol button:nth-of-type(2) {
+    background: #27b9c2;
+}
+
+#enrol button:nth-of-type(2):hover {
+    background: #ff6f61;
+}
+
+/* CONTACT */
+
+#contact {
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    background: #24324a;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1.05rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    #home h2 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 45px 20px;
+    }
+
+    #levels div,
+    #subjects div,
+    #lessons article,
+    #resources article {
+        width: 90%;
+        max-width: 360px;
+        margin: 12px auto;
+        display: block;
+    }
+}
+```
