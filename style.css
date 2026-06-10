@@ -660,3 +660,78 @@ footer {
         padding: 20px;
     }
 }
+/* ===============================
+   ENROLMENT AND PAYMENT OPTIONS
+   =============================== */
+
+.enrolment-actions {
+    text-align: center;
+    margin: 25px auto 35px;
+}
+
+.payment-options {
+    max-width: 950px;
+    margin: 35px auto 0;
+    padding: 30px;
+    background: white;
+    border-radius: 26px;
+    box-shadow: 0 8px 22px rgba(36, 87, 197, 0.12);
+    text-align: center;
+}
+
+.payment-options h3 {
+    color: #2457c5;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.payment-options article {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    min-height: 175px;
+    margin: 12px;
+    padding: 22px;
+    border-radius: 20px;
+    background: #fffaf0;
+    border-top: 7px solid #27b9c2;
+    text-align: left;
+    box-shadow: 0 7px 18px rgba(36, 87, 197, 0.1);
+}
+
+.payment-options article:nth-of-type(2) {
+    border-top-color: #ff6f61;
+}
+
+.payment-options article:nth-of-type(3) {
+    border-top-color: #ffd85a;
+}
+
+.payment-options h4 {
+    color: #24324a;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.payment-note {
+    max-width: 800px;
+    margin: 25px auto 0;
+    padding: 16px;
+    border-radius: 18px;
+    background: #eef9ff;
+    color: #24324a;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .payment-options {
+        padding: 22px 15px;
+    }
+
+    .payment-options article {
+        width: 100%;
+        max-width: 360px;
+        display: block;
+        margin: 14px auto;
+    }
+}
