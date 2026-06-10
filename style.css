@@ -751,3 +751,80 @@ footer {
 #subjects .lesson-button {
     margin-top: 30px;
 }
+/* ===============================
+   WHY CHOOSE SECTION
+   =============================== */
+
+#why-choose {
+    background: #fffaf0;
+    text-align: center;
+}
+
+#why-choose > p {
+    max-width: 900px;
+    margin: 0 auto 35px;
+    font-size: 1.12rem;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1150px;
+    margin: 35px auto 0;
+}
+
+.why-grid article {
+    background: white;
+    padding: 28px;
+    border-radius: 24px;
+    box-shadow: 0 8px 22px rgba(36, 87, 197, 0.12);
+    border-top: 8px solid #2457c5;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.why-grid article:hover {
+    transform: translateY(-6px);
+}
+
+.why-grid article:nth-child(2) {
+    border-top-color: #27b9c2;
+}
+
+.why-grid article:nth-child(3) {
+    border-top-color: #ffd85a;
+}
+
+.why-grid article:nth-child(4) {
+    border-top-color: #ff6f61;
+}
+
+.why-grid article:nth-child(5) {
+    border-top-color: #8c6ee8;
+}
+
+.why-grid article:nth-child(6) {
+    border-top-color: #69c779;
+}
+
+.why-grid h3 {
+    color: #24324a;
+    margin-bottom: 12px;
+}
+
+.why-grid p {
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    .why-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}
